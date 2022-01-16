@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Gallery</title>
+	<link rel="icon" type="image/png" sizes="16x16" href="img/android-chrome-512x512.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<style> 
+        body
+			{
+				background-image: url(img/background.jpg);
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-size: 100% 100%;
+            }
+        h1
+			{
+				font-family:"Lucida Handwriting", cursive;
+				font-size: 46px;
+			}
+		p
+			{
+				font-family: 'Times New Roman', Times, serif;
+				font-size: 17px;
+			}
+        img
+            {
+
+                border-radius: 10px;
+
+                border-style: solid;
+				border-color: #653239;
+				border-radius: 15px;
+				padding: 5px;
+                position: static;
+            }
+        .card
+			{
+            	background-color:#fcf0f4;
+				padding: 20px;
+            	margin: 20px;
+				border-radius: 20px;
+        	}
+        .cardd
+			{
+				background-color: #3c2f2f;
+				padding: 10px;
+				margin: 5px;
+				border-radius: 10px;
+				font-family: 'Times New Roman', Times, serif;
+				font-size: 16px;
+				color: white;
+			}
+        .slideshow-container
+			{
+				max-width: 750px;
+				position: relative;
+				margin: auto;
+                vertical-align: middle;
+			}
+		.prev, .next
+			{
+				cursor: pointer;
+				position: static;
+				top: 50%;
+				width: auto;
+				padding: 16px;
+				margin-top: -22px;
+				color: black;
+				font-weight: bold;
+				font-size: 18px;
+				transition: 0.6 ease;
+				border-radius: 0 3px 3px 0;
+				user-select: none;
+			}
+		.next
+			{
+				right: 0;
+				border-radius: 3px 0 0 3px;
+			}
+		.prev:hover, .next:hover
+			{
+				background-color: #653239;
+			}
+		.dot 
+			{
+  				cursor: pointer;
+  				height: 15px;
+  				width: 15px;
+  				margin: 0 2px;
+  				background-color: rgb(206, 183, 183);
+  				border-radius: 50%;
+  				display: inline-block;
+  				transition: background-color 0.6s ease;
+			}
+		.active, .dot:hover
+			{
+				background-color: maroon;
+			}
+		.fade
+			{
+				-webkit-animation-name: fade;
+				-webkit-animation-duration: 1.5s;
+				animation-name: fade;
+				animation-duration: 1.5s;
+			}
+		@-webkit-keyframes fade
+			{
+				from {opacity: .4}
+				to {opacity: 1}
+			}
+		@keyframes fade
+			{
+				from {opacity: .4}
+				to {opacity: 1}
+			}
+		@media only screen and (max-width:300px)
+			{
+				.prev, .next, .text {font-size: 11px;}
+			}
+     </style>
+</head>
+<body>
+
+<div style="text-align: center;"> 
+    <h1 style="background-color: #3c2f2f;"> <font color='white'>GALLERY</h1>
+    </div>
+        
+    <a href="index.html"><img src="img/home-icon.png" alt="Home" style="border-style: none;" height="50px"></a>
+
+<div style="text-align: center;">
+    
+<br>
+
+<div class="card">
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="img/hivenra-4.png" height="400px">
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="img/hivenra-5.png" height="400px">
+        </div>
+                
+        <div class="mySlides fade">
+            <img src="img/img8_3.png" height="400px">
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="img/open-house.jpg" height="400px">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img/swim.jpg" height="400px">
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="img/uitm2.png" height="400px">
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="img/housemate.jpg" height="400px">
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="img/perkad.jpg" height="400px">
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="img/classamate2.jpg" height="400px">
+        </div>  
+              
+        <div class="mySlides fade">
+            <img src="img/spm.jpg" height="400px">
+        </div>
+
+<br>
+        <a class="prev" onclick="nextslides(-1)">&#10094;</a>
+        <a class="next" onclick="nextslides(1)">&#10095;</a>
+        
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+            <span class="dot" onclick="currentslide(1)"></span> 
+            <span class="dot" onclick="currentslide(2)"></span> 
+            <span class="dot" onclick="currentslide(3)"></span> 
+            <span class="dot" onclick="currentslide(4)"></span>
+            <span class="dot" onclick="currentslide(5)"></span>
+            <span class="dot" onclick="currentslide(6)"></span>
+            <span class="dot" onclick="currentslide(7)"></span>
+            <span class="dot" onclick="currentslide(8)"></span>
+            <span class="dot" onclick="currentslide(9)"></span>
+            <span class="dot" onclick="currentslide(10)"></span>
+        </div>
+        
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function nextslides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentslide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+        </div>
+        </div>
+</div>
+</div>
+<br>
+<div class="cardd"> <div style="text-align: center;">
+    <p>Copyright &copy; 2021-2022 Husna. Created and designed by Amirah Husna Binti Zakaria.</p>
+</div></div>
+    
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Homepage</title>
+	<link rel="icon" type="image/png" sizes="16x16" href="img/android-chrome-512x512.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+    body 
+        {
+            background-image: url(img/background.jpg);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100% 100%;
+		}
+
+    p
+        {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+        }
+    b
+        {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 22px;
+        }
+    h2
+        {
+            font-size: 30px;
+        }
+    .header
+        {
+            padding: 30px;
+            text-align: center;
+        }
+
+    .header h1 
+        {
+            font-size: 65px;
+        }
+
+    .topnav    
+        {
+            overflow: hidden;
+            position: relative;
+            background-color: #3c2f2f;
+        }
+
+    .topnav a 
+        {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+    .topnav a:hover 
+        {
+        background-color: #ddd;
+        color: black;
+        }
+    .topnav-centered a 
+        {
+            float: none;
+            position: absolute;
+        }    
+    .leftcolumn 
+        {   
+            float: left;
+            width: 75%;
+        }
+
+    .rightcolumn 
+        {
+            float: right;
+            width: 25%;
+            padding-left: 20px;
+        }
+
+    .card 
+        {
+            background-color:#fcf0f4;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+	.cardd
+			{
+				background-color: #3c2f2f;
+				padding: 10px;
+				margin: 5px;
+				border-radius: 10px;
+				font-family: 'Times New Roman', Times, serif;
+				font-size: 16px;
+                color: white;
+			}
+    .row:after 
+        {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+    @media screen and (max-width: 800px)   
+        {
+            .leftcolumn, .rightcolumn 
+                {   
+                    width: 100%;
+                    padding: 0;
+                }
+        }
+
+    @media screen and (max-width: 400px) 
+        {
+            .topnav a 
+                {
+                    float: none;
+                    width: 100%;
+                }
+        }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1><font color="white">HOME</font></h1>
+</div>
+
+<div class="topnav">
+    <a href="biodata.html" target="_self"><b>Biodata</b></a>
+    <a href="education.html" target="_self"><b>Education</b></a>
+    <a href="experience.html" target="_self"><b>Experience</b></a>
+    <a href="family.html" target="_self"><b>Family</b></a>
+    <a href="random-things.html" target="_self"><b>Random Things</b></a>	
+    <a href="gallery.html" target="_self"><b>Gallery</b></a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card"> <div style="width: 1065px;">
+      <h2><u>My Socials!</u></h2>
+      <p><a href="https://www.instagram.com/husnazackk/" target="_blank"><img src="img/instagram.jpg" height="25px" alt="Instagram"></a> Instagram - <i>@husnazackk</i></p>
+      <p><a href="https://twitter.com/husnazac" target="_blank"><img src="img/twitter.jpg" height="25px" alt="Twitter"></a> Twitter - <i>@husnazac</i></p>
+      <p><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><img src="img/gmail.jpg" height="20px" alt="E-mail"></a> E-mail - <i>amirahhusna2399@gmail.com</i></p>
+    </div></div>
+  
+  <div class="card">
+        <h2><u>Welcoming Post</u></h2>
+        <div style="text-align: center;"><img src="img/hello.gif" height="350px"></div>
+        <div style="text-align: justify;"><p>Hi, welcome to my personal website! Here you will find some information about me such as my biodata, my education history, 
+            my experience in making friends and groups that I stan. I hope you will enjoy and hopefully will know more about me through this website :)</div>
+        </p>
+      </div>
+  
+    <div class="card">
+        <h2><u>Acknowledgement</u></h2>
+        <div style="text-align: center;"><img src="img/thankyou.gif" height="300px"></div>
+        <div style="text-align: justify;"><p>This Website's purpose is for my assignment for subject IMD311 (Introduction To Web Content Management And Design). For this subject, Madam 
+            Seri Intan Idayu Shahrul Asari assists me a lot in completing this assignment. I am really grateful because I managed to complete this assignment within the time given by Madam Seri Intan. 
+            Many people have made valuable comments and suggestions on this assignment which gave me inspiration to improve this assignment. Honestly, this assignment cannot be completed without the effort and cooperation from everyone.
+            I thank all the people for their help directly and indirectly to complete this assignment.</div>
+        </p>
+    </div>
+</div>
+  
+  <div class="rightcolumn">
+    <div class="card">
+        <div style="text-align: center;">
+      <h2><u>Myself</u></h2>
+      <img src="img/husna3.png" height="300px">
+      <p>Hello! My name is Amirah Husna Binti Zakaria. I am currently 21 years old and studying Information Management in UiTM Rembau. Above is my baby picture from when I was 4 years old.</p></div>
+    </div>
+        
+    <div class="card">
+      <h2><u>Fav pics of my favboy ♡</u></h2>
+        <img src="https://i.pinimg.com/564x/71/df/42/71df42cd70fa71885c16d5884f73974e.jpg" height="200px">
+        <img src="https://i.pinimg.com/564x/d8/da/ee/d8daee9ba562a4adade08a37c58def52.jpg" height="200px">
+        <img src="https://i.pinimg.com/564x/70/7e/f6/707ef613e60a81f9f8871b70b6d9bc49.jpg" height="200px">
+        <img src="https://i.pinimg.com/564x/2c/3b/67/2c3b6758d94120c98fd6505886ed3d37.jpg" height="200px">
+        <img src="https://i.pinimg.com/564x/b4/6a/aa/b46aaa3dc52e3502d8e43808c424811b.jpg" height="200px">  
+        <img src="https://i.pinimg.com/564x/ff/9e/f2/ff9ef2609980e2ac521bd058920e419d.jpg" height="200px">
+		<img src="https://i.pinimg.com/originals/bb/0f/ed/bb0fed58720224d1f3357ece6c8caf42.gif" height="180px">
+    </div>
+    </div>
+</div>
+
+<br>
+<div class="cardd"> <div style="text-align: center;">
+	<p>Copyright &copy; 2021-2022 Husna. Created and designed by Amirah Husna Binti Zakaria.</p>
+</div></div>
+
+</body>
+</html>
+
+
